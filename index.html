@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="index.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="container">
+    <!--body of Calculator-->
+    <div class="output">
+      <!--display screen of calculator-->
+      <input class="outbox" type="text" id="num" />
+    </div>
+    <div class="keypad">
+      <!--buttons-->
+      <div class="var">
+        <div class="digits">
+          <p class="row-1">
+            <button id='9' class="btn-num" onclick="showSymbol(9)">9</button>
+            <button id='8' class="btn-num" onclick="showSymbol(8)">8</button>
+            <button id='7' class="btn-num" onclick="showSymbol(7)">7</button>
+          </p>
+          <p class="row-2">
+            <button id='6' class="btn-num" onclick="showSymbol(6)">6</button>
+            <button id='5' class="btn-num" onclick="showSymbol(5)">5</button>
+            <button id='4' class="btn-num" onclick="showSymbol(4)">4</button>
+          </p>
+          <p class="row-3">
+            <button id='3' class="btn-num" onclick="showSymbol(3)">3</button>
+            <button id='2' class="btn-num" onclick="showSymbol(2)">2</button>
+            <button id='1' class="btn-num" onclick="showSymbol(1)">1</button>
+          </p>
+          <p class="row-4">
+            <button id='0' class="btn-num" onclick="showSymbol(0)">0</button>
+
+          </p>
+
+        </div>
+        <div class="operators">
+          <button id='add' class="btn-op" onclick="showSymbol('+')">+</button>
+          <button id='sub' class="btn-op" onclick="showSymbol('-')">-</button>
+          <button id='mul' class="btn-op" onclick="showSymbol('*')">*</button>
+          <button id='div' class="btn-op" onclick="showSymbol('÷')">/</button>
+          <button id='.' class="btn-op" onclick="showSymbol('.')">.</button>
+        </div>
+
+      </div>
+      <div class="manipulators">
+        <button id='del' class="btn-man" onclick=" del()">C</button>
+        <button id='ans' class="btn-man" onclick="ans()">=</button></div>
+
+    </div>
+  </div>
+  </div>
+  <script src="index.js">
+  </script>
+</body>
+
+</html>

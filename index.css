@@ -1,0 +1,109 @@
+
+body{
+
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  font-style: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:#FFA45B;
+}
+/* textbox */
+.outbox{
+  padding: 11px;
+  background: white;
+  text-align: right;
+  font-size: 30px;
+  margin:0;
+  border: none;
+  color: #FA6096;
+}
+/* overall output area */
+.output{
+  border: 5px solid white;
+  align-items: center;
+}
+/* overall key area */
+.keypad{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  padding: 20px;
+  border: 5px solid white;
+}
+/* digits and operators */
+.var{
+  display: flex;
+  justify-content: center;}
+
+  /* digits */
+.digits
+{ text-align: center;
+  margin: 2px auto;
+  padding: 5px 5px;
+}
+/* operators */
+.operators{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  margin: 2px auto;
+  padding: 20px 5px;}
+/* manipulators */
+.manipulators{
+  text-align: center;
+  margin: 2px auto;
+  padding: 5px 5px;
+  }
+  /* body of calculator */
+.container{
+  margin: 1.7% auto;
+  padding: 2%;
+  height:600px;
+  width: 350px;
+  border: none;
+  position: center;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around ;
+  background:#FCD4C8;
+  background: ;
+  border-radius: 30px;
+  box-shadow:  rgba(26, 26, 26, 0.22) 4px 4px;
+}
+
+/* button common design */
+.btn-num,.btn-op,.btn-man{
+  border:none;
+  height:60px;
+  width:60px;
+  border-radius:60px;
+  padding: 2px;
+  margin: 3px;
+  font-size: 20px;
+  text-align:center;
+  cursor: pointer;
+  
+}
+/* hover */
+.btn-num:hover,.btn-op:hover,.btn-man:hover
+{  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+
+/* individual properties buttons */
+.btn-num{
+  background-color:#FAF1E8;
+  color: grey;
+}
+.btn-op
+{
+  background-color:#FA6096;
+  color: white;
+}
+#del
+{background-color: rgb(42, 72, 97);
+  color:white;}
+#ans
+{
+  background-color: rgb(189, 53, 53);
+  color:white;
+}
